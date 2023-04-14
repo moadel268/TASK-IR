@@ -4,10 +4,10 @@ def remove_stop_words(text, stop_words):
     filtered_text = " ".join([word for word in words if word.lower() not in stop_words])
     return filtered_text
 documents = {
-    1: "new home sales top forecasts",
-    2: "home sales rise in July",
-    3: "increase in home sales in July",
-    4: "July new home sales rise",
+    D1: "new home sales top forecasts",
+    D2: "home sales rise in July",
+    D3: "increase in home sales in July",
+    D4: "July new home sales rise",
 }
 stop_words = {"in", "is", "a", "and", "are"}
 for doc_id, text in documents.items():
